@@ -103,7 +103,7 @@
     <!-- Di bagian sini nanti ceritanya buat peta bencana, cara mitigasi dan penanganannya (Boleh juga kalo ada ide lain masukin aja) -->
     <!-- Semua jadi satu dokumen aja, navbarnya pake scroll spy (Boottrap) -->
     <div class="data" data-bs-spy="scroll" data-bs-target="#navspy">
-
+        
     </div>
 </body>
 
