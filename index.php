@@ -66,11 +66,24 @@
 
     }
 
+    .definisi {
+        margin: 20px 25px 20px 25px;
+    }
+
+    .definisi p {
+        margin: 30px 30px 30px 30px;
+    }
+
     .data {
         margin: 20px 25px 20px 25px;
         border-radius: 10px;
         background-color: #504435;
         background-size: cover;
+    }
+
+    .mitigasi {
+        margin: 20px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
     }
 </style>
 
@@ -100,10 +113,43 @@
         </div>
     </div>
 
+    <!-- definisi tanah longsor -->
+    <div class="definisi">
+        <p>Tanah longsor adalah peristiwa geologi di mana massa tanah,
+            batu, atau material lainnya bergerak menuruni lereng akibat
+            gravitasi, sering dipicu oleh hujan lebat, erosi, gempa bumi,
+            atau aktivitas manusia seperti penebangan hutan dan pembangunan
+            yang tidak terencana. Peristiwa ini dapat menyebabkan kerusakan
+            infrastruktur, kehilangan nyawa, serta gangguan ekosistem, tetapi
+            risikonya dapat diminimalkan melalui pengelolaan lingkungan yang
+            bijak dan perencanaan yang tepat.</p>
+    </div>
+
     <!-- Di bagian sini nanti ceritanya buat peta bencana, cara mitigasi dan penanganannya (Boleh juga kalo ada ide lain masukin aja) -->
     <!-- Semua jadi satu dokumen aja, navbarnya pake scroll spy (Boottrap) -->
     <div class="data" data-bs-spy="scroll" data-bs-target="#navspy">
-        
+        <div class="mitigasi" id="scrollspyMitigasi">
+            <p>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Ratione iusto aliquid laudantium.
+                Quis dolore quaerat tenetur dolores earum tempora
+                incidunt, sed optio sunt sint, aspernatur fugit.
+                Nobis quis quod sint.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Ratione iusto aliquid laudantium.
+                Quis dolore quaerat tenetur dolores earum tempora
+                incidunt, sed optio sunt sint, aspernatur fugit.
+                Nobis quis quod sint.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Ratione iusto aliquid laudantium.
+                Quis dolore quaerat tenetur dolores earum tempora
+                incidunt, sed optio sunt sint, aspernatur fugit.
+                Nobis quis quod sint.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Ratione iusto aliquid laudantium.
+                Quis dolore quaerat tenetur dolores earum tempora
+                incidunt, sed optio sunt sint, aspernatur fugit.
+                Nobis quis quod sint.</p>
+        </div>
     </div>
 </body>
 
