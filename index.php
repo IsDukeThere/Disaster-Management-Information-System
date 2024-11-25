@@ -40,7 +40,7 @@
         font-size: 16px;
         margin-right: 10px;
         margin-left: 10px;
-        color: black;
+        color: #483D30;
     }
 
     .about {
@@ -53,7 +53,13 @@
         font-family: 'Montserrat';
         font-weight: 650;
         font-size: 16px;
-        color: black;
+        color: #483D30;
+    }
+
+    .landing {
+        display: flex;
+        flex-direction: column;
+
     }
 
     .landing p {
@@ -62,8 +68,33 @@
         font-size: 150px;
         color: white;
         margin-left: 40px;
-        width: 50%;
 
+    }
+
+    .short-link {
+        margin-left: 40px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .link {
+        padding: 5px 15px 5px 15px;
+        border-radius: 25px;
+        border: solid;
+        border-color: white;
+        margin: 15px;
+        color: white;
+    }
+
+    .link :hover {
+        padding: 6px 30px 6px 30px;
+        border-radius: 25px;
+        background-color: white;
+    }
+
+    .link :hover a {
+        color: #483D30;
     }
 
     .definisi {
@@ -71,14 +102,18 @@
     }
 
     .definisi p {
-        margin: 30px 30px 30px 30px;
+        margin: 80px 30px 80px 30px;
+        color: #F2CCA0;
     }
 
     .data {
         margin: 20px 25px 20px 25px;
+        padding-top: 10px;
+        padding-bottom: 20px;
         border-radius: 10px;
         background-color: #504435;
         background-size: cover;
+        color: #F2CCA0;
     }
 
     .mitigasi {
@@ -109,7 +144,19 @@
         </nav>
 
         <div class="landing">
-            <p>Tanah Longsor</p>
+            <p>Tanah</p>
+            <p>Longsor</p>
+        </div>
+        <div class="short-link">
+            <div type="button" class="link" href="#scrollspyJenis">
+                <a>Jenis - Jenis</a>
+            </div>
+            <div type="button" class="link" href="#scrollspyGejala">
+                <a>Gejala</a>
+            </div>
+            <div type="button" class="link" href="#scrollspyJenis">
+                <a>Faktor</a>
+            </div>
         </div>
     </div>
 
@@ -129,6 +176,7 @@
     <!-- Semua jadi satu dokumen aja, navbarnya pake scroll spy (Boottrap) -->
     <div class="data" data-bs-spy="scroll" data-bs-target="#navspy">
         <div class="mitigasi" id="scrollspyMitigasi">
+            <h2>Mitigasi</h2>
             <p>Lorem ipsum dolor, sit amet consectetur
                 adipisicing elit. Ratione iusto aliquid laudantium.
                 Quis dolore quaerat tenetur dolores earum tempora
