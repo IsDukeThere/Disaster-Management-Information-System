@@ -19,8 +19,9 @@
 
     .background {
         margin: 20px 25px 20px 25px;
+        padding-bottom: 60px;
         border-radius: 10px;
-        background-image: url('<?= url ?>img/pexels-zac-frith-325758-918794.jpg');
+        background-image: url('<?= img ?>img/pexels-zac-frith-325758-918794.jpg');
         background-size: cover;
     }
 
@@ -72,8 +73,7 @@
     }
 
     .lower {
-        margin-top: 25px;
-        margin-bottom: 100px;
+        margin-top: 40px;
     }
 
     .short-link {
@@ -81,6 +81,7 @@
         display: flex;
         flex-direction: row;
         font-size: larger;
+        font-weight: 600;
     }
 
     .short-link a {
@@ -93,7 +94,7 @@
     }
 
     .short-link :hover {
-        padding: 6px 30px 6px 30px;
+        padding: 5px 30px 5px 30px;
         border-radius: 25px;
         background-color: white;
         color: black;
@@ -268,6 +269,7 @@
         <div class="jenis" id="scrollspyJenis">
             <h2>Jenis - Jenis Tanah Longsor</h2>
             <h4>Longsoran Geser (Translasi)</h4>
+            <img src="<?= img ?>img/longsorantranslasi.png" alt="Longsor Translasi" class="image" style="">
             <p>Jenis longsor ini terjadi ketika
                 tanah atau batuan bergerak menuruni
                 lereng secara lurus. Bayangkan seperti
