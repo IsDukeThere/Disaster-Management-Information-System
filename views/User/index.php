@@ -80,9 +80,10 @@ require_once '../../controllers/config.php';
         padding-bottom: 20px;
         display: flex;
         flex-direction: row;
+        font-size: larger;
     }
 
-    .link {
+    .short-link a {
         padding: 5px 15px 5px 15px;
         border-radius: 25px;
         border: solid;
@@ -91,7 +92,7 @@ require_once '../../controllers/config.php';
         color: white;
     }
 
-    .link :hover {
+    .short-link :hover {
         padding: 6px 30px 6px 30px;
         border-radius: 25px;
         background-color: white;
@@ -106,6 +107,7 @@ require_once '../../controllers/config.php';
         margin: 30px 30px 30px 30px;
         color: #F2CCA0;
         text-align: justify;
+        font-size: 18px;
     }
 
     .def-longsor {
@@ -114,10 +116,73 @@ require_once '../../controllers/config.php';
         padding-bottom: 20px;
     }
 
-    .jenis .Gejala .Faktor {
-        margin: 20px 20px 20px 20px;
-        padding: 20px 20px 20px 20px;
+    .jenis {
+        margin: 30px 25px 30px 25px;
+        padding: 20px 20px 20px 40px;
+        border-radius: 10px;
+        background-color: #504435;
+        background-size: cover;
         color: #F2CCA0;
+        text-align: justify;
+    }
+
+    .jenis h2 {
+        font-weight: 800;
+        padding-bottom: 15px;
+    }
+
+    .jenis h4 {
+        padding-left: 30px;
+        font-size: 28px;
+    }
+
+    .jenis p {
+        padding-left: 50px;
+        padding-right: 60px;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .Gejala {
+        margin: 30px 25px 30px 25px;
+        padding: 20px 20px 20px 40px;
+        color: #F2CCA0;
+        text-align: justify;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Gejala h2 {
+        font-weight: 800;
+        padding-bottom: 15px;
+    }
+
+    .Gejala p {
+        padding-left: 50px;
+        padding-right: 60px;
+        font-size: 18px;
+    }
+
+    .Faktor {
+        margin: 30px 25px 30px 25px;
+        padding: 20px 20px 20px 40px;
+        border-radius: 10px;
+        background-color: #504435;
+        background-size: cover;
+        color: #F2CCA0;
+        text-align: justify;
+    }
+
+    .Faktor h2 {
+        font-weight: 800;
+        padding-bottom: 15px;
+    }
+
+    .Faktor p {
+        padding-left: 50px;
+        padding-right: 60px;
+        font-size: 18px;
     }
 
     .data {
@@ -133,6 +198,11 @@ require_once '../../controllers/config.php';
     .mitigasi {
         margin: 20px 20px 20px 20px;
         padding: 20px 20px 20px 20px;
+    }
+
+    .mitigasi h2 {
+        font-weight: 800;
+        padding-bottom: 15px;
     }
 </style>
 
@@ -162,15 +232,9 @@ require_once '../../controllers/config.php';
             <p>Longsor</p>
         </div>
         <div class="short-link" id="navspy">
-            <div type="button" class="link">
-                <a href="#scrollspyJenis">Jenis - Jenis</a>
-            </div>
-            <div type="button" class="link">
-                <a href="#scrollspyGejala">Gejala</a>
-            </div>
-            <div type="button" class="link">
-                <a href="#scrollspyFaktor">Faktor</a>
-            </div>
+            <a href="#scrollspyJenis">Jenis - Jenis</a>
+            <a href="#scrollspyGejala">Gejala</a>
+            <a href="#scrollspyFaktor">Faktor</a>
         </div>
     </div>
 
@@ -198,14 +262,73 @@ require_once '../../controllers/config.php';
     <div class="Def-longsor" data-bs-spy="scroll" data-bs-target="#navspy">
         <div class="jenis" id="scrollspyJenis">
             <h2>Jenis - Jenis Tanah Longsor</h2>
+            <h4>Longsoran Geser (Translasi)</h4>
+            <p>Jenis longsor ini terjadi ketika
+                tanah atau batuan bergerak menuruni
+                lereng secara lurus. Bayangkan seperti
+                papan seluncur yang meluncur di atas
+                permukaan licin. Longsoran ini sering
+                terjadi pada lereng yang bidangnya cukup
+                rata dan lapisan tanahnya tidak terlalu dalam.</p>
+
+            <h4>Longsoran Melingkar (Rotasi)</h4>
+            <p>Pada jenis ini, tanah bergerak
+                melengkung atau berputar saat jatuh.
+                Biasanya longsoran ini terjadi pada
+                lereng yang lebih dalam dengan massa
+                tanah yang besar. Gambarnya seperti
+                tanah yang 'menggulung' saat bergerak ke bawah.</p>
+
+            <h4>Rayapan Tanah (Creep)</h4>
+            <p>Longsor jenis ini sangat lambat dan tidak
+                langsung terlihat. Tanahnya pelan-pelan
+                sekali bergerak turun dari lereng. Jenis
+                tanahnya berupa butiran kasar dan halus.
+                Meskipun lambat, jenis longsor ini tetap
+                berbahaya karena bisa merusak bangunan
+                atau infrastruktur di sekitarnya dalam jangka panjang.</p>
+
+            <h4>Runtuhan Batu (Rockfall)</h4>
+            <p>Ini jenis longsor di mana batuan jatuh
+                bebas dari tebing atau lereng yang curam.
+                Biasanya, batu-batu besar yang jatuh, dan
+                bisa sangat berbahaya karena pergerakannya
+                cepat dan tanpa peringatan.</p>
+
+            <h4>pergerakan blok (block slide)</h4>
+            <p>Jenis tanah longsor di mana sebuah massa
+                besar dari batu atau tanah bergerak turun
+                sebagai satu kesatuan utuh. Jenis longsor
+                ini biasanya terjadi di lereng yang terbuat
+                dari material yang keras, seperti batu, yang
+                memungkinkan seluruh blok tetap utuh saat bergerak.</p>
+
+            <h4>Aliran Bahan Rombakan</h4>
+            <p>Longsor ini terjadi karera massa tanah bergerak
+                didorong oleh air. Biasanya terjadi di sepanjang
+                lembah dan mampu mencapai ratusan meter. Kecepatan
+                longsoran ini dipengaruhi oleh kemiringan tanah
+                itu sendiri</p>
         </div>
 
         <div class="Gejala" id="scrollspyGejala">
             <h2>Gejala awal Tanah Longsor</h2>
+            <p>1. Munculnya retakan-retakan di lereng yang sejajar dengan arah tebing.</p>
+            <p>2. Biasanya terjadi setelah hujan.</p>
+            <p>3. Munculnya mata air baru secara tiba-tiba.</p>
+            <p>4. Tebing rapuh dan kerikil mulai berjatuhan.</p>
         </div>
 
         <div class="Faktor" id="scrollspyFaktor">
             <h2>Faktor Penyebab Tanah Longsor</h2>
+            <p>1. Curah Hujan Tinggi</p>
+            <p>2. Gempa Bumi</p>
+            <p>3. Penggundulan Hutan</p>
+            <p>4. Perubahan Penggunaan Lahan</p>
+            <p>5. Tekstur tanah tidak padat</p>
+            <p>6. Erosi</p>
+            <p>7. Batuan yang rapuh</p>
+            <p>8. Beban berat pada tanah</p>
         </div>
 
     </div>
