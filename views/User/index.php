@@ -1,3 +1,7 @@
+<?php
+require_once '../../controllers/config.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +24,7 @@
     .background {
         margin: 20px 25px 20px 25px;
         border-radius: 10px;
-        background-image: url(img/pexels-zac-frith-325758-918794.jpg);
+        background-image: url('<?= url ?>img/pexels-zac-frith-325758-918794.jpg');
         background-size: cover;
     }
 
@@ -91,23 +95,33 @@
         padding: 6px 30px 6px 30px;
         border-radius: 25px;
         background-color: white;
-    }
-
-    .link :hover a {
-        color: #483D30;
+        color: black;
     }
 
     .definisi {
-        margin: 20px 25px 20px 25px;
+        margin: 80px 25px 100px 25px;
     }
 
     .definisi p {
-        margin: 80px 30px 80px 30px;
+        margin: 30px 30px 30px 30px;
+        color: #F2CCA0;
+        text-align: justify;
+    }
+
+    .def-longsor {
+        margin: 30px 30px 60px 30px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .jenis .Gejala .Faktor {
+        margin: 20px 20px 20px 20px;
+        padding: 20px 20px 20px 20px;
         color: #F2CCA0;
     }
 
     .data {
-        margin: 20px 25px 20px 25px;
+        margin: 30px 25px 30px 25px;
         padding-top: 10px;
         padding-bottom: 20px;
         border-radius: 10px;
@@ -131,7 +145,7 @@
                     <a class="navbrand">Anggep Aja Logo</a>
                 </div>
                 <div class="collapse navbar-collapse justify-content-center" id="NavbarMenu">
-                    <div class="nav-item position-relative" id="navspy">
+                    <div class="nav-item position-relative" id="navspymenu">
                         <a href="#scrollspyPeta">Peta Bencana</a>
                         <a href="#scrollspyMitigasi">Mitigasi</a>
                         <a href="#scrollspyPenanganan">Penanganan</a>
@@ -147,15 +161,15 @@
             <p>Tanah</p>
             <p>Longsor</p>
         </div>
-        <div class="short-link">
-            <div type="button" class="link" href="#scrollspyJenis">
-                <a>Jenis - Jenis</a>
+        <div class="short-link" id="navspy">
+            <div type="button" class="link">
+                <a href="#scrollspyJenis">Jenis - Jenis</a>
             </div>
-            <div type="button" class="link" href="#scrollspyGejala">
-                <a>Gejala</a>
+            <div type="button" class="link">
+                <a href="#scrollspyGejala">Gejala</a>
             </div>
-            <div type="button" class="link" href="#scrollspyJenis">
-                <a>Faktor</a>
+            <div type="button" class="link">
+                <a href="#scrollspyFaktor">Faktor</a>
             </div>
         </div>
     </div>
@@ -170,11 +184,35 @@
             infrastruktur, kehilangan nyawa, serta gangguan ekosistem, tetapi
             risikonya dapat diminimalkan melalui pengelolaan lingkungan yang
             bijak dan perencanaan yang tepat.</p>
+        <p style="font-style: italic;">"Tanah longsor atau gerakan tanah adalah suatu konsekuensi fenomena
+            dinamis alam untuk mencapai kondisi baru akibat gangguan
+            keseimbangan lereng yang terjadi, baik secara alamiah maupun
+            akibat ulah manusia. Tanah longsor akan terjadi pada suatu lereng
+            jika ada keadaan ketidakseimbangan yang menyebabkan terjadinya suatu
+            proses mekanis, mengakibatkan sebagian dari lereng tersebut bergerak
+            mengikuti gaya gravitasi, dan selanjutnya setelah terjadi tanah
+            longsor, lereng akan seimbang atau stabil kembali
+            (Akhirianto dan Naryanto, 2016: 117)."</p>
+    </div>
+
+    <div class="Def-longsor" data-bs-spy="scroll" data-bs-target="#navspy">
+        <div class="jenis" id="scrollspyJenis">
+            <h2>Jenis - Jenis Tanah Longsor</h2>
+        </div>
+
+        <div class="Gejala" id="scrollspyGejala">
+            <h2>Gejala awal Tanah Longsor</h2>
+        </div>
+
+        <div class="Faktor" id="scrollspyFaktor">
+            <h2>Faktor Penyebab Tanah Longsor</h2>
+        </div>
+
     </div>
 
     <!-- Di bagian sini nanti ceritanya buat peta bencana, cara mitigasi dan penanganannya (Boleh juga kalo ada ide lain masukin aja) -->
-    <!-- Semua jadi satu dokumen aja, navbarnya pake scroll spy (Boottrap) -->
-    <div class="data" data-bs-spy="scroll" data-bs-target="#navspy">
+    <!-- Semua jadi satu dokumen aja, navbarnya pake scroll spy (Bootstrap) -->
+    <div class="data" data-bs-spy="scroll" data-bs-target="#navspymenu">
         <div class="mitigasi" id="scrollspyMitigasi">
             <h2>Mitigasi</h2>
             <p>Lorem ipsum dolor, sit amet consectetur
