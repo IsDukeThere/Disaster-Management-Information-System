@@ -144,6 +144,13 @@
         font-size: 18px;
     }
 
+    .image {
+        width: 600px;
+        display: block;
+        margin: auto;
+        padding-bottom: 20px;
+    }
+
     .Gejala {
         margin: 30px 25px 30px 25px;
         padding: 20px 20px 20px 40px;
@@ -186,6 +193,32 @@
         font-size: 18px;
     }
 
+    .Dampak {
+        margin: 30px 25px 30px 25px;
+        padding: 20px 20px 20px 40px;
+        color: #F2CCA0;
+        text-align: justify;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Dampak h2 {
+        font-weight: 800;
+        padding-bottom: 15px;
+    }
+
+    .jenis h4 {
+        padding-left: 30px;
+        font-size: 28px;
+    }
+
+    .Dampak p {
+        padding-left: 50px;
+        padding-right: 60px;
+        font-size: 18px;
+    }
+
     .data {
         margin: 30px 25px 30px 25px;
         padding-top: 10px;
@@ -223,7 +256,7 @@
                     </div>
                 </div>
                 <div class="about">
-                    <a href="about.php">About Us</a>
+                    <a href="<?= page ?>User/about.php">About Us</a>
                 </div>
             </div>
         </nav>
@@ -269,7 +302,9 @@
         <div class="jenis" id="scrollspyJenis">
             <h2>Jenis - Jenis Tanah Longsor</h2>
             <h4>Longsoran Geser (Translasi)</h4>
-            <img src="<?= img ?>img/longsorantranslasi.png" alt="Longsor Translasi" class="image" style="">
+            <div class="image">
+                <img src="<?= img ?>img/longsorantranslasi.png" alt="Longsor Translasi" class="image">
+            </div>
             <p>Jenis longsor ini terjadi ketika
                 tanah atau batuan bergerak menuruni
                 lereng secara lurus. Bayangkan seperti
@@ -279,6 +314,9 @@
                 rata dan lapisan tanahnya tidak terlalu dalam.</p>
 
             <h4>Longsoran Melingkar (Rotasi)</h4>
+            <div class="image">
+                <img src="<?= img ?>img/longsoranrotasi.png" alt="Longsor Rotasi" class="image">
+            </div>
             <p>Pada jenis ini, tanah bergerak
                 melengkung atau berputar saat jatuh.
                 Biasanya longsoran ini terjadi pada
@@ -287,6 +325,9 @@
                 tanah yang 'menggulung' saat bergerak ke bawah.</p>
 
             <h4>Rayapan Tanah (Creep)</h4>
+            <div class="image">
+                <img src="<?= img ?>img/rayapantanah.png" alt="Rayapan Tanah" class="image">
+            </div>
             <p>Longsor jenis ini sangat lambat dan tidak
                 langsung terlihat. Tanahnya pelan-pelan
                 sekali bergerak turun dari lereng. Jenis
@@ -296,6 +337,9 @@
                 atau infrastruktur di sekitarnya dalam jangka panjang.</p>
 
             <h4>Runtuhan Batu (Rockfall)</h4>
+            <div class="image">
+                <img src="<?= img ?>img/runtuhanbatu.png" alt="Runtuhan Batu" class="image">
+            </div>
             <p>Ini jenis longsor di mana batuan jatuh
                 bebas dari tebing atau lereng yang curam.
                 Biasanya, batu-batu besar yang jatuh, dan
@@ -303,6 +347,9 @@
                 cepat dan tanpa peringatan.</p>
 
             <h4>pergerakan blok (block slide)</h4>
+            <div class="image">
+                <img src="<?= img ?>img/pergerakanblok.png" alt="Pergerakan Blok" class="image">
+            </div>
             <p>Jenis tanah longsor di mana sebuah massa
                 besar dari batu atau tanah bergerak turun
                 sebagai satu kesatuan utuh. Jenis longsor
@@ -311,6 +358,9 @@
                 memungkinkan seluruh blok tetap utuh saat bergerak.</p>
 
             <h4>Aliran Bahan Rombakan</h4>
+            <div class="image">
+                <img src="<?= img ?>img/aliranbahanrombakan.png" alt="Aliran Rombakan" class="image">
+            </div>
             <p>Longsor ini terjadi karera massa tanah bergerak
                 didorong oleh air. Biasanya terjadi di sepanjang
                 lembah dan mampu mencapai ratusan meter. Kecepatan
@@ -336,6 +386,73 @@
             <p>6. Erosi</p>
             <p>7. Batuan yang rapuh</p>
             <p>8. Beban berat pada tanah</p>
+        </div>
+
+        <div class="Dampak" id="scrollspydampak">
+            <h2>Dampak</h2>
+            <h4>Korban jiwa</h4>
+            <p>Hal paling mengerikan dari tanah longsor
+                yaitu jatuhnya korban jiwa baik korban
+                luka atau kematian. Tanah yang longsor
+                secara tiba-tiba dapat menimpa siapa saja
+                yang ada di jalurnya. Terutama jika longsor
+                terjadi di daerah pemukiman warga. Dilansir
+                dari <i>World Health Organization</i>, antara 1998
+                hingga 2017, tanah longsor memengaruhi sekitar
+                4,8 juta orang dan menyebabkan lebih dari 18 ribu
+                kematian. Tidak hanya berdampak secara fisik,
+                korban selamat dari tanah longsor kerap kali
+                mengalami trauma psikis.</p>
+
+            <h4>Rusaknya infrastruktur dan terputusnya jalur transportasi </h4>
+            <p>Tanah longsor dapat menyebabkan kerusakan infrastruktur
+                yang ada disekitarnya. <i>Robert L. Schuster</i> dan <i>Lynn M. Highland</i>
+                dalam <i>Socioeconomic and Environmental Impacts of Landside in
+                    the Western Hemisphere</i> (2001) menyebutkan tanah
+                longsorng menyebabkan kerusakan konstruksi bangunan,
+                jalur transportasi, bendungan, waduk, kanal,
+                dan juga sistem komunikasi. Longsor dalam
+                skala besar merusak bangunan, gedung, jalan, menara
+                telekomunikasi, dan berbagai infrastruktur lainnya.
+                Hal tersebut kerap kali menutup jalan dan memutus sinyal
+                komunikasi, menyebabkan daerah yang terkenal longsor sulit dicapai.</p>
+
+            <h4>Kehilangan tempat tinggal</h4>
+            <p>Tanah longsor merusak rumah, membuat masyarakat kehilangan
+                tempat tinggal. Hal tersebut jelas menimbulkan kerugian
+                yang sangat besat. Harta benda masyarakat ikut terbawa longsor,
+                dan hanya sedikit yang bisa diselamatkan. Kehilangan tempat
+                tinggal juga menyebabkan korban longsor tidak memiliki tempat
+                perlindungan, makanan, pakaian, juga tempat sanitasi. Sehingga,
+                harus segera diberi bantuan sebelum gangguan kesehatan lainnya muncul.</p>
+
+            <h4>Kerugian dan terhambatnya perekonomian</h4>
+            <p>Rusaknya rumah, infrastruktur, dan lahan menyebabkan kerugian
+                yang besar dan menghambat perekonomian. Akibat tanah longsor,
+                korban tidak bisa melakukan aktivitas ekonomi. Akses jalan yang
+                tertutup juga menyebabkan terhambatnya perekonomian masyarakat
+                sekitar daerah longsor.</p>
+
+            <h4>Rusaknya lahan pertanian</h4>
+            <p>Disadur dari Food and Agriculture Organization of the United Nations,
+                tanah longsor berdampak buruk pada mata pencarian petani karena
+                dapat menghalangi akses tanah selama bertahun-tahun dan
+                menghancurkan benih, dan menghilangkan tanaman serta hewan ternak.
+                Tanah longsor dapat merusak lahan pertanian dalam waktu singkat,
+                mematikan vegetasi yang ditanam, membuat tanah tidak bisa ditanami
+                sementara waktu, dan menghasilkan kerugian yang besar bagi para petani.</p>
+
+            <h4>Pencemaran sumber air</h4>
+            <p>Tanah longsor dapat mencemari sumber air di sekitarnya seperti
+                mata air dan sungai. Longsor dapat membawa sedimen yang
+                menurunkan kualitas air. Namun, yang lebih berbahaya jika
+                longsor membawa logam ataupun cairan kimia di dalamnya.
+                Sedimen tanah dan batuan akan mengendap di sungai dan
+                membuatnya keruh. Namun, bahan kimia juga logam berat dapat
+                merusak kualitas sungai, mencemari sepanjang aliran sungai,
+                dan memberikan gangguan kesehatan hingga kematian pada makhluk
+                hidup di sekitarnya.</p>
+
         </div>
 
     </div>
