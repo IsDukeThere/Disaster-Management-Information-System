@@ -1,7 +1,3 @@
-<?php
-require_once '../../controllers/config.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
