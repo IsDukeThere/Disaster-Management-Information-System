@@ -75,9 +75,13 @@ require_once '../../controllers/config.php';
 
     }
 
+    .lower {
+        margin-top: 25px;
+        margin-bottom: 100px;
+    }
+
     .short-link {
         margin-left: 40px;
-        padding-bottom: 20px;
         display: flex;
         flex-direction: row;
         font-size: larger;
@@ -231,10 +235,15 @@ require_once '../../controllers/config.php';
             <p>Tanah</p>
             <p>Longsor</p>
         </div>
-        <div class="short-link" id="navspy">
-            <a href="#scrollspyJenis">Jenis - Jenis</a>
-            <a href="#scrollspyGejala">Gejala</a>
-            <a href="#scrollspyFaktor">Faktor</a>
+        <div class="lower">
+            <div class="short-link" id="navspy">
+                <a href="#scrollspyJenis">Jenis - Jenis</a>
+                <a href="#scrollspyGejala">Gejala</a>
+                <a href="#scrollspyFaktor">Faktor</a>
+            </div>
+            <div class="short-link" id="navspy">
+                <a href="#scrollspydampak">Dampak</a>
+            </div>
         </div>
     </div>
 
