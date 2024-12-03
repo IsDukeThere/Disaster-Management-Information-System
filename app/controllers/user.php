@@ -1,14 +1,17 @@
 <?php
-class user extends controller {
-    public function index() {
+class user extends controller
+{
+    public function index()
+    {
         $data = 'user';
 
-        $this->views('../views/user/index', $data);
-
+        $this->views('user/index', $data);
     }
 
-    public function about() {
+    public function about()
+    {
+        $data = 'about';
 
+        $this->views('user/about', $data);
     }
-
 }

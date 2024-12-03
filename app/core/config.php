@@ -4,4 +4,4 @@
 define('img', '/public/');
 
 //Page URL
-define('page', '/app/');
+define('page', '/public/');

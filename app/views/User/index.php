@@ -24,13 +24,13 @@
         bottom: 20px;
         right: 30px;
         z-index: 99;
-        font-size: 18px;
+        font-size: 30px;
         border: none;
         outline: none;
         background-color: #F2CCA0;
         color: #6A5946;
         cursor: pointer;
-        padding: 10px 19px;
+        padding: 4px 20px;
         border-radius: 120px;
     }
 
@@ -38,21 +38,6 @@
         background-color: #6A5946;
         color: #F2CCA0;
     }
-
-    /* .background {
-        margin: 20px 25px 20px 25px;
-        padding-bottom: 60px;
-        border-radius: 10px;
-        background-image: url('<?= img ?>img/pexels-zac-frith-325758-918794.jpg');
-        background-size: cover;
-        filter: brightness(1) grayscale(5) sepia(0.3);
-    } */
-
-    /* background-image {
-        filter: brightness(10%);
-        filter: grayscale(25%);
-        filter: sepia(80%);
-    } */
 
     .background {
         margin: 20px 25px;
@@ -304,6 +289,55 @@
         padding-right: 60px;
         font-size: 18px;
     }
+
+    .lapor {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 18px;
+        margin: 30px 25px 30px 25px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        border-radius: 10px;
+        background-color: #504435;
+        background-size: cover;
+        color: #F2CCA0;
+    }
+
+    .form-title-nav h2 {
+        font-weight: 800;
+        padding-bottom: 15px;
+    }
+
+    .form-container {
+        font-family: 'Montserrat';
+        font-weight: 800;
+        font-size: 18px;
+        margin: 30px 25px 30px 25px;
+        padding: 20px 30px 20px 30px;
+        border-radius: 10px;
+        background-color: #504435;
+        background-size: cover;
+        color: #F2CCA0;
+    }
+
+    label {
+        font-family: 'Montserrat';
+        font-weight: 600;
+    }
+
+    .btn-submit {
+        background-color: #F2CCA0;
+        color: #504435;
+        border-radius: 20px;
+        width: 15%;
+        justify-content: center;
+    }
+
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 </style>
 
 <body>
@@ -337,13 +371,13 @@
                 </div>
                 <div class="collapse navbar-collapse justify-content-center" id="NavbarMenu">
                     <div class="nav-item position-relative" id="navspymenu">
-                        <a href="#scrollspyPeta">Peta Bencana</a>
+                        <a href="#scrollspyPeta">Data Bencana</a>
                         <a href="#scrollspyMitigasi">Mitigasi</a>
                         <a href="#scrollspyPenanganan">Penanggulangan</a>
                     </div>
                 </div>
                 <div class="about">
-                    <a href="<?= page ?>User/about.php">About Us</a>
+                    <a href="<?= page ?>about">About Us</a>
                 </div>
             </div>
         </nav>
@@ -586,6 +620,31 @@
                 Quis dolore quaerat tenetur dolores earum tempora
                 incidunt, sed optio sunt sint, aspernatur fugit.
                 Nobis quis quod sint.</p>
+        </div>
+    </div>
+    <div class="lapor" id="scrollspylapor">
+        <div class="container mt-4 d-flex justify-content-center">
+            <div class="form-title-nav">
+                <h2>Form Laporan Kejadian Tanah Longsor</h2>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <form action="submit_laporan.php" method="post">
+                <div class="mb-3">
+                    <label for="tempatKejadian" class="form-label">Tempat Kejadian</label>
+                    <input type="text" class="form-control" id="tempatKejadian" name="tempatKejadian" placeholder="Masukkan tempat kejadian" required>
+                </div>
+                <div class="mb-3">
+                    <label for="tanggalKejadian" class="form-label">Tanggal Kejadian</label>
+                    <input type="date" class="form-control" id="tanggalKejadian" name="tanggalKejadian" required>
+                </div>
+                <div class="mb-3">
+                    <label for="jumlahKorban" class="form-label">Jumlah Korban</label>
+                    <input type="number" class="form-control" id="jumlahKorban" name="jumlahKorban" placeholder="Masukkan jumlah korban" min="0" required>
+                </div>
+                <button type="submit" class="btn btn-submit">Kirim Laporan</button>
+            </form>
         </div>
     </div>
 </body>
