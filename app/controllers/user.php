@@ -3,14 +3,14 @@ class user extends controller
 {
     public function index()
     {
-        $data = 'user';
+        $data = [];
 
         $this->views('user/index', $data);
     }
 
     public function about()
     {
-        $data = 'about';
+        $data = [];
 
         $this->views('user/about', $data);
     }

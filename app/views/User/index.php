@@ -277,6 +277,14 @@
         margin: 20px 20px 20px 20px;
         padding: 20px 20px 20px 20px;
         text-align: justify;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .mitigasi .content h4 {
+        margin-right: 60px;
+        margin-left: 35px;
     }
 
     .mitigasi h2 {
@@ -338,6 +346,28 @@
         justify-content: space-between;
         align-items: center;
     }
+
+    .konten {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 35px 45px 15px 45px;
+    }
+
+    .konten a {
+        color: #504435;
+    }
+
+    footer {
+        width: 100%;
+        bottom: 0;
+        font-family: 'Montserrat';
+        background-color: #F2CCA0;
+        color: #504435;
+        margin-top: 35px;
+        padding-bottom: 15px;
+        padding: 4px;
+    }
 </style>
 
 <body>
@@ -367,7 +397,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <div class="brand">
-                    <a href="#" class="navbrand"><img src="<?= img ?>img/1.png" alt="SI Longsor" width="120px"></a>
+                    <a href="<?= page ?>user/" class="navbrand"><img src="<?= img ?>img/1.png" alt="SI Longsor" width="120px"></a>
                 </div>
                 <div class="collapse navbar-collapse justify-content-center" id="NavbarMenu">
                     <div class="nav-item position-relative" id="navspymenu">
@@ -377,7 +407,7 @@
                     </div>
                 </div>
                 <div class="about">
-                    <a href="<?= page ?>about">About Us</a>
+                    <a href="<?= page ?>user/about">About Us</a>
                 </div>
             </div>
         </nav>
@@ -423,7 +453,7 @@
     <div class="Def-longsor" data-bs-spy="scroll" data-bs-target="#navspy">
         <div class="jenis" id="scrollspyJenis">
             <h2>Jenis - Jenis Tanah Longsor</h2>
-            <h2> </h2>
+            <h2></h2>
             <div class="image">
                 <img src="<?= img ?>img/longsorantranslasi.png" alt="Longsor Translasi" class="image">
             </div>
@@ -597,6 +627,7 @@
     <div class="data" data-bs-spy="scroll" data-bs-target="#navspymenu">
         <div class="mitigasi" id="scrollspyMitigasi">
             <h2>Mitigasi</h2>
+            <h2></h2>
             <p>Mitigasi bencana adalah upaya atau tindakan yang dilakukan
                 untuk mengurangi atau meminimalkan dampak negatif dari
                 bencana alam atau bencana buatan manusia. Tujuannya adalah
@@ -605,21 +636,48 @@
                 langkah-langkah pencegahan, persiapan, dan perlindungan
                 agar masyarakat, infrastruktur, dan lingkungan dapat lebih
                 siap menghadapi bencana dan meminimalkan dampaknya.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Ratione iusto aliquid laudantium.
-                Quis dolore quaerat tenetur dolores earum tempora
-                incidunt, sed optio sunt sint, aspernatur fugit.
-                Nobis quis quod sint.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Ratione iusto aliquid laudantium.
-                Quis dolore quaerat tenetur dolores earum tempora
-                incidunt, sed optio sunt sint, aspernatur fugit.
-                Nobis quis quod sint.</p>
-            <p>Lorem ipsum dolor, sit amet consectetur
-                adipisicing elit. Ratione iusto aliquid laudantium.
-                Quis dolore quaerat tenetur dolores earum tempora
-                incidunt, sed optio sunt sint, aspernatur fugit.
-                Nobis quis quod sint.</p>
+            <p></p>
+            <div class="content">
+                <h4>Mengurangi tingkat keterjangan lereng dengan pengolahan lahan terasering di kawasan lereng</h4>
+                <p>Terasering adalah metode pengelolaan lahan berbentuk
+                    tangga atau berundak yang digunakan untuk mengurangi
+                    tingkat keterjangan lereng, terutama di kawasan berbukit
+                    atau pegunungan. Teknik ini bertujuan untuk mengurangi laju
+                    aliran air permukaan, sehingga mencegah erosi dan menjaga
+                    kestabilan struktur tanah. Dengan menciptakan permukaan datar
+                    pada setiap tingkat, terasering memungkinkan air meresap ke dalam
+                    tanah secara optimal dan mengurangi risiko tanah menjadi jenuh yang
+                    dapat memicu longsor. Selain itu, terasering juga memberikan ruang
+                    yang aman untuk aktivitas pertanian, di mana tanaman yang ditanam
+                    membantu memperkuat tanah melalui akar-akarnya. Dengan demikian,
+                    terasering tidak hanya berfungsi untuk mitigasi bencana longsor,
+                    tetapi juga mendukung keberlanjutan lingkungan dan pengelolaan sumber
+                    daya lahan yang lebih baik.</p>
+            </div>
+            <div class="image">
+                <img src="<?= img ?>img/mitigasi/terasering.jpg" alt="terasering" class="image">
+            </div>
+            <div class="content">
+                <h4>Pembangunan talud(dinding penahan tanah)</h4>
+                <p>Talud adalah struktur dinding yang dibangun untuk menahan tekanan lateral tanah, terutama pada area lereng atau tebing, dengan tujuan mencegah longsor dan menjaga kestabilan tanah. Talud biasanya dibuat dari material seperti batu, beton, atau bata yang disusun secara kokoh agar mampu menahan beban tanah di atasnya. Selain berfungsi sebagai penahan tanah, talud juga membantu mengalirkan air hujan dengan lebih teratur melalui sistem drainase yang sering kali terintegrasi di dalamnya, sehingga mengurangi risiko jenuhnya tanah yang dapat memicu longsor. Struktur ini sering diterapkan di kawasan rawan longsor, seperti lereng jalan, bantaran sungai, dan area permukiman berbukit. Dengan pembangunannya yang tepat, talud menjadi salah satu langkah mitigasi efektif untuk melindungi lingkungan sekaligus infrastruktur di sekitarnya.</p>
+            </div>
+            <div class="image">
+                <img src="<?= img ?>img/mitigasi/talud.jpg" alt="Talud" class="image">
+            </div>
+            <div class="content">
+                <h4>Menjaga drainase lereng</h4>
+                <p>Menjaga drainase lereng merupakan langkah penting dalam mencegah longsor dan kerusakan lingkungan di kawasan berbukit atau curam. Sistem drainase yang baik berfungsi untuk mengalirkan air hujan secara teratur agar tidak menggenangi atau menjenuhkan tanah di lereng, yang dapat menyebabkan pergerakan tanah. Hal ini dilakukan dengan memastikan saluran air tetap bersih dari sumbatan seperti sampah, sedimen, atau tumbuhan liar. Selain itu, pembuatan saluran drainase yang mengikuti kontur lereng dapat membantu mengurangi kecepatan aliran air, sehingga mengurangi erosi. Pada beberapa kasus, penggunaan talang air, parit beton, atau sumur resapan di sekitar lereng juga ditambahkan untuk memaksimalkan pengelolaan air. Dengan menjaga drainase lereng tetap berfungsi optimal, stabilitas tanah dapat dipertahankan dan risiko bencana longsor dapat diminimalkan.</p>
+            </div>
+            <div class="image">
+                <img src="<?= img ?>img/mitigasi/drainasea.jpg" alt="Drainase" class="image">
+            </div>
+            <div class="content">
+                <h4>Melakukan reboisasi </h4>
+                <p>Reboisasi adalah upaya penghijauan kembali kawasan hutan atau lahan kritis dengan menanam pohon untuk memulihkan fungsi ekologisnya. Pada lereng atau daerah rawan longsor, reboisasi menjadi langkah penting karena pohon yang ditanam membantu memperkuat struktur tanah melalui akar-akarnya yang menyerap air dan mengikat partikel tanah. Selain itu, reboisasi juga berperan dalam mengurangi risiko erosi dengan memperlambat laju air hujan saat mencapai permukaan tanah, berkat kanopi pohon yang menahan intensitas hujan. Upaya ini tidak hanya mencegah longsor, tetapi juga memperbaiki kualitas lingkungan, seperti meningkatkan resapan air tanah, mengurangi aliran permukaan, dan menjaga keberagaman hayati. Reboisasi yang dilakukan secara terencana dan berkelanjutan memberikan manfaat jangka panjang bagi stabilitas ekosistem dan kesejahteraan masyarakat sekitar.</p>
+            </div>
+            <div class="image">
+                <img src="<?= img ?>img/mitigasi/reboisasi.jpg" alt="Reboisasi" class="image">
+            </div>
         </div>
     </div>
     <div class="lapor" id="scrollspylapor">
@@ -648,5 +706,27 @@
         </div>
     </div>
 </body>
+<footer>
+    <div class="konten">
+        <div class="footer-section">
+            <img src="<?= img ?>img/3.png" alt="SI Longsor" width="120px">
+            <p>Sistem Informasi Tanah Longsor</p>
+        </div>
+        <div class="footer-section">
+            <h6>Follow Us</h6>
+            <div class="social-icons" style="align-items: center;">
+                <a href="#"><img src="<?= ico ?>ico/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="<?= ico ?>ico/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="<?= ico ?>ico/instagram.svg" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h6>Contact</h6>
+            <p>Email: info@SiLongsor.com</p>
+            <a href="https://wa.me/+6288225025876">Phone: +6288225025876</a>
+        </div>
+    </div>
+    <center>SiLongsor&copy; 2024</center>
+</footer>
 
 </html>
